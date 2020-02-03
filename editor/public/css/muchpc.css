@@ -1,0 +1,408 @@
+/* Vue UIKit compatibility fix */
+.uk-icon>svg:nth-child(2) {display: none;}
+
+.key-border {
+    box-shadow:0px 0px 0px 1px black inset;
+    border-radius: 3px;
+    background: #dddddd;
+    display: inline-block;
+}
+
+.key-border:hover {
+    box-shadow:0px 0px 0px 1px blue inset;
+}
+
+.key-non-interactive:hover {
+    box-shadow:0px 0px 0px 1px black inset;
+}
+
+.key-border:active {
+    box-shadow:0px 0px 1px 2px #2222cc inset;
+}
+.key-non-interactive:active {
+    box-shadow:0px 0px 0px 1px black inset;
+}
+
+.background {
+    background-color: #f0f0f0;
+}
+
+.page {
+    margin: auto;
+    max-width: 10.25in;
+    min-width: 10.25in;
+    background-color: #ffffff;
+}
+
+.key-selector .uk-modal-dialog {
+    min-width: 12in;
+    max-width: 12in;
+}
+
+.code-block {
+    box-shadow:0px 0px 0px 1px #ccccdd inset;
+    padding-left:3px;
+    padding-right:3px;
+    font-family: 'Ubuntu Sans Mono', monospace;
+}
+
+.led {
+    position: absolute;
+    left: 52mm;
+    top: 65mm;
+    width: 2in;
+    height: 0.5in;
+}
+
+.led-red {
+    background-image: radial-gradient(red, transparent, transparent);
+}
+
+.led-green {
+    background-image: radial-gradient(green, transparent, transparent);
+}
+
+.led-blue {
+    background-image: radial-gradient(blue, transparent, transparent);
+}
+
+.core {
+    text-align: center;
+    position: relative;
+}
+
+.key-container {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 2mm;
+    background: #ffffff;
+    height: 12mm;
+    overflow: hidden;
+}
+
+.key-legend-main {
+    white-space: nowrap;
+    text-align: center;
+    color: black;
+}
+
+.color-pn {
+    color: #edad00;
+}
+
+.color-fn {
+    color: blue;
+}
+
+.color-fn1 {
+    color: red;
+}
+
+.key-legend-pn {
+    position: absolute;
+    top: 9.5mm;
+    left: 3.5mm;
+    font-size: 9pt;
+}
+
+.key-legend-fn1 {
+    position: absolute;
+    left: 1mm;
+    top: 13.5mm;
+    font-size: 9pt;
+}
+.key-legend-fn {
+    position: absolute;
+    top: 13.5mm;
+    right: 1mm;
+    font-size: 9pt;
+}
+
+.key {
+    position: relative;
+    padding-bottom: 4mm;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.key.selected {
+    box-shadow:0px 0px 0px 1px blue inset;
+    background: #ccccdd;
+}
+
+.key.selected .key-container {
+    background: #eeeeff;
+}
+
+.key-1x1 {
+    width: 18mm;
+}
+
+.key-1x1 .key-container {
+    width: 12mm;
+}
+
+.key-1x1_25 {
+    width: 22.5mm;
+}
+
+.key-1x1_25 .key-container {
+    width: 16.5mm;
+}
+
+.key-1x1_75 {
+    width: 31.5mm;
+}
+
+.key-1x1_75 .key-container {
+    width: 25.5mm;
+}
+
+.key-1x2_75 {
+    width: 49.5mm;
+}
+
+.key-1x2_75 .key-container {
+    width: 43.5mm;
+}
+
+.fullKeyboard {
+    text-align: center;
+    font-size: 10pt;
+}
+
+.key.small {
+    padding-bottom:1mm;
+}
+
+.key.small .key-container {
+    margin-top: 1mm;
+}
+
+.key.small .key-legend-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+
+.fk-space {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.fk-0_5x1 {
+    height: 6mm;
+    width: 12mm;
+}
+
+.fk-0_5x1 .key-container {
+    height: 5mm;
+    width: 10mm;
+}
+
+.fk-1x0_5 {
+    height: 10mm;
+    width: 6mm;
+}
+
+.fk-1x0_5 .key-container {
+    height: 9mm;
+    width: 4mm;
+}
+
+.fk-1x1 {
+    height: 10mm;
+    width: 12mm;
+}
+
+.fk-1x1 .key-container {
+    height: 9mm;
+    width: 10mm;
+}
+
+.fk-1x1_25 {
+    height: 10mm;
+    width: 15mm;
+}
+
+.fk-1x1_25 .key-container {
+    height: 9mm;
+    width: 13mm;
+}
+
+.fk-1x1_5 {
+    height: 10mm;
+    width: 18mm;
+}
+
+.fk-1x1_5 .key-container {
+    height: 9mm;
+    width: 16mm;
+}
+
+.fk-1x1_75 {
+    height: 10mm;
+    width: 21mm;
+}
+
+.fk-1x1_75 .key-container {
+    height: 9mm;
+    width: 19mm;
+}
+
+.fk-1x2 {
+    height: 10mm;
+    width: 24mm;
+}
+
+.fk-1x2 .key-container {
+    height: 9mm;
+    width: 22mm;
+}
+
+.fk-1x2_25 {
+    height: 10mm;
+    width: 27mm;
+}
+
+.fk-1x2_25 .key-container {
+    height: 9mm;
+    width: 25mm;
+}
+
+.fk-1x2_75 {
+    height: 10mm;
+    width: 33mm;
+}
+
+.fk-1x2_75 .key-container {
+    height: 9mm;
+    width: 31mm;
+}
+
+.fk-1x4 {
+    height: 10mm;
+    width: 48mm;
+}
+
+.fk-1x4 .key-container {
+    height: 9mm;
+    width: 46mm;
+}
+
+.fk-1x6_25 {
+    height: 10mm;
+    width: 75mm;
+}
+
+.fk-1x6_25 .key-container {
+    height: 9mm;
+    width: 73mm;
+}
+
+.fk-2x1 {
+    height: 21mm;
+    width: 12mm;
+    position: absolute;
+}
+
+.fk-2x1 .key-container {
+    height: 20mm;
+    width: 10mm;
+}
+
+.macro-title {
+    max-height: 3em;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.macro-event {
+    width: 16mm;
+    height: 16mm;
+    display: inline-block;
+    border-radius: 5px;
+    background: #dddddd;
+    overflow: hidden;
+    margin-left: 1px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.macro-event-container {
+    height: 16mm;
+    display: inline-block;
+}
+
+.macro-event.down {
+    box-shadow: 0px 0px 3px 3px #555 inset;
+}
+
+.macro-event.up {
+    box-shadow: 0px 0px 0px 1px #555 inset;
+}
+
+.macro-event-list {
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 1em;
+    width: 100%;
+}
+
+.macro-more {
+    position: absolute;
+    text-align: center;
+    margin-top: 3mm;
+}
+
+.macro-interval-container {
+    display: inline-block;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.macro-interval {
+    text-align: center;
+    width:35px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #ddd;
+    padding-right: 2px;
+    margin-right: 4px;
+}
+
+.macro-interval.long {
+    border-bottom: 1px dashed #bbb;
+}
+
+.sortable-ghost {
+    opacity: 0;
+}
+
+.sortable-drag {
+    width: 16mm;
+    height: 16mm;
+}
+
+.sortable-drag .macro-interval-container {
+    display: none;
+}
+
+.macro-selection-border {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 3px;
+}
+
+.repeats-input {
+    margin-left: 15px;
+}
